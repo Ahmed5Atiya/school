@@ -20,18 +20,18 @@ import Material from "./componant/Material";
 export default function App() {
   return (
     <BrowserRouter>
-      <main className="relative">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/teacher" element={<Teacher />} />
-          <Route path="/material" element={<Material />} />
-          <Route path="*" element={<NotFound />} />{" "}
-          {/* Catch-all route for 404 */}
-        </Routes>
-        <Footer />
-      </main>
+      {/* <main className="relative"> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/teacher" element={<Teacher />} />
+        <Route path="/material" element={<Material />} />
+        <Route path="*" element={<NotFound />} />{" "}
+        {/* Catch-all route for 404 */}
+      </Routes>
+      <Footer />
+      {/* </main> */}
     </BrowserRouter>
   );
 }
